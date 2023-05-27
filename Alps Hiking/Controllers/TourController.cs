@@ -35,8 +35,6 @@ namespace Alps_Hiking.Controllers
             List<Tour> tours=alltour.ToList();
             ViewBag.Categories = _context.Categories.ToList();
             ViewBag.Slider = _context.Sliders.ToList();
-
-
             return View(tours);
         }
 

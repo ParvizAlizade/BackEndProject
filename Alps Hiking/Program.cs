@@ -1,11 +1,11 @@
 using Alps_Hiking.DAL;
+using Alps_Hiking.Entities;
 using Alps_Hiking.Services;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
 builder.Services.AddControllersWithViews();
 
 builder.Services.AddDbContext<AlpsHikingDbContext>(opt =>
@@ -16,22 +16,20 @@ builder.Services.AddDbContext<AlpsHikingDbContext>(opt =>
 builder.Services.AddScoped<LayoutService>();
 builder.Services.AddHttpContextAccessor();
 
-//builder.Services.AddIdentity<User, IdentityRole>(opt =>
-//{
-//	opt.Password.RequiredUniqueChars = 2;
-//	opt.Password.RequireNonAlphanumeric = false;
-//	opt.Password.RequireDigit = true;
-//	opt.Password.RequireUppercase = false;
-//	opt.Password.RequiredLength = 4;
-//	opt.Password.RequireLowercase = true;
+builder.Services.AddIdentity<User, IdentityRole>(opt =>
+{
+	opt.Password.RequiredUniqueChars = 2;
+	opt.Password.RequireNonAlphanumeric = false;
+	opt.Password.RequireDigit = true;
+	opt.Password.RequireUppercase = false;
+	opt.Password.RequiredLength = 4;
+	opt.Password.RequireLowercase = true;
 
-//	opt.User.RequireUniqueEmail = false;
+	opt.User.RequireUniqueEmail = false;
 
-//	opt.Lockout.MaxFailedAccessAttempts = 4;
-//	opt.Lockout.DefaultLockoutTimeSpan = TimeSpan.FromMinutes(5);
-//}).AddDefaultTokenProviders().AddEntityFrameworkStores<FoxicDbContext>();
-
-
+	opt.Lockout.MaxFailedAccessAttempts = 4;
+	opt.Lockout.DefaultLockoutTimeSpan = TimeSpan.FromMinutes(5);
+}).AddDefaultTokenProviders().AddEntityFrameworkStores<AlpsHikingDbContext>();
 
 
 var app = builder.Build();

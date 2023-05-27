@@ -31,7 +31,7 @@
         <div id="topheader">
             <div class="container-fluid">
                 <div class="row d-flex">
-                    <div class="leftside col-lg-6 col-md-6 d-flex">
+                    <div class="leftside col-lg-5 col-md-4 d-flex">
                         <div class="phone d-flex ">
                             <i class="fa-solid fa-phone"></i>
                             <a style="text-decoration: none;" href="tel:+9945157773">
@@ -43,18 +43,45 @@
                             <p><a style="text-decoration: none;" href="mailto:">@Html.Raw(layoutservice.GetSettings().FirstOrDefault(s=>s.Key == "Email")?.Value)</a></p>
                         </div>
                     </div>
-                    <div class="rightside d-flex col-md-6 col-lg-6 ">
+                    <div class="rightside d-flex col-md-8 col-lg-7 ">
                         <div>
-                            <a href="https://www.facebook.com/">@Html.Raw(layoutservice.GetSettings().FirstOrDefault(s=>s.Key == "FacebookIcon")?.Value)</a></a>
-                            <a href="https://www.flickr.com/">@Html.Raw(layoutservice.GetSettings().FirstOrDefault(s=>s.Key == "FlickrIcon")?.Value)</a></a>
+                            <a href="https://www.facebook.com/">@Html.Raw(layoutservice.GetSettings().FirstOrDefault(s=>s.Key == "FacebookIcon")?.Value)</a>
+                            @if (User.Identity.IsAuthenticated)
+                            {
+                                <a style="display:none" href="https://www.flickr.com/">@Html.Raw(layoutservice.GetSettings().FirstOrDefault(s=>s.Key == "FlickrIcon")?.Value)</a>
+                            }
+                            else
+                            {
+                            <a href="https://www.flickr.com/">@Html.Raw(layoutservice.GetSettings().FirstOrDefault(s=>s.Key == "FlickrIcon")?.Value)</a>
+                            }
                             <a href="https://support.google.com/answer/2451065?hl=en">
                                 @Html.Raw(layoutservice.GetSettings().FirstOrDefault(s=>s.Key == "GooglePlusIcon")?.Value)
                             </a>
                             <a href="https://twitter.com/">@Html.Raw(layoutservice.GetSettings().FirstOrDefault(s=>s.Key == "TwitterIcon")?.Value)</a>
-                            <a href="">@Html.Raw(layoutservice.GetSettings().FirstOrDefault(s=>s.Key == "LoginIcon")?.Value)</a>
-                            <span><a style="text-decoration: none;" asp-action="Login" asp-controller="Account">Login</a></span>
-                            @Html.Raw(layoutservice.GetSettings().FirstOrDefault(s=>s.Key == "RegisterIcon")?.Value)
-                            <span><a style="text-decoration: none;" asp-action="Register" asp-controller="Account">Sign Up</a></span>
+                           
+                            @if (User.Identity.IsAuthenticated)
+                            {
+                                @if (User.IsInRole("Admin"))
+                                {
+                                    <a style="text-decoration:none;padding-right:11px;padding-left:11px" asp-controller="Admin" asp-action="Index">Admin Panel</a>
+                                    <a style="text-decoration:none" asp-controller="Account" asp-action="LogOut">Log out</a>
+
+                                }
+                                else
+                                {
+                                <a>@User.Identity.Name</a>
+                            <i class="fa-solid fa-right-from-bracket"></i>
+                            <a style="text-decoration:none" asp-controller="Account" asp-action="LogOut">Log out</a>    
+                                }
+                               
+                            }
+                            else
+                            {
+                                @Html.Raw(layoutservice.GetSettings().FirstOrDefault(s=>s.Key == "LoginIcon")?.Value)
+                                <span><a style="text-decoration: none;" asp-action="Login" asp-controller="Account">Login</a></span>
+                                @Html.Raw(layoutservice.GetSettings().FirstOrDefault(s=>s.Key == "RegisterIcon")?.Value)
+                                <span><a style="text-decoration: none;" asp-action="Register" asp-controller="Account">Sign Up</a></span>
+                            }
                         </div>
                     </div>
                 </div>

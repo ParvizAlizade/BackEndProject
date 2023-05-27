@@ -1,5 +1,5 @@
 //search for price
-$('#search').on('keyup', function() {
+$('#searchh').on('keyup', function() {
     var value = $(this).val();
     var patt = new RegExp(value, "i");
   
@@ -20,8 +20,4 @@ $('#search').on('keyup', function() {
 });
 
 
-$(".hedd").slice(0, 9).show();
-$("#loadmorebutton").on("click", function (e) {
-    e.preventDefault();
-    $(".hedd:hidden").slice(0, 6).slideDown();
-});
+

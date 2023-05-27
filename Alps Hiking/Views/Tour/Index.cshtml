@@ -2,7 +2,6 @@
 @{
     ViewData["Title"] = "Tours Page";
     List<Slider> sliders = ViewBag.Slider;
-
 }
 
 
@@ -16,7 +15,7 @@
             <div class="image">
                 <img src="~/assets/images/SectionImages/@sliders.Find(s=>s.Title=="Our Tours").ImagePath" alt="">
             </div>
-            <h1 class="d-lg-block d-md-none d-sm-none">Our Tours</h1>
+            <h1 style="font-size:66px" class="d-lg-block d-md-none d-sm-none">Our Tours</h1>
         </div>
     </section>
 
@@ -35,11 +34,11 @@
                             <h5>Keywords</h5>
                             <form class="form-inline col-lg-12  my-2 my-lg-0"  method='get' target='_blank'>
                                 <main class='search'>
-                                    <input type='search' aria-label="Search" class='search-input form-control' id="search" name='q' placeholder='search'>
-                                    <ion-icon name="mic-outline" class='search-icon mic'></ion-icon>
+                                    <input type='search' aria-label="Search" class='search-input form-control' id="searchh" name='q' placeholder='search'>
                                 </main>
                             </form>
                         </div>
+                    
 
                         <div class="category">
                             <h5>Category</h5>
@@ -55,7 +54,7 @@
 
                         <div class="duration">
                             <h5>Duration</h5>
-                           @foreach (Tour item in Model.OrderBy(i=>i.DayCount))
+                            @foreach (Tour item in Model.OrderBy(i => i.DayCount).GroupBy(i => i.DayCount).Select(g => g.First()))
                             {
                                 <input type="checkbox" name="" id="">
                                 <label for="">@item.DayCount Day Tour</label>
@@ -120,7 +119,7 @@
                         </div>
                         <div class="destination">
                             <h5>Destination</h5>
-                           @foreach (Tour item in Model )
+                            @foreach (Tour item in Model.GroupBy(i => i.Destination).Select(g => g.First()))
                             {
                                 <input type="checkbox" name="" id="">
                                 <label for="">@item.Destination.Name</label>
@@ -143,8 +142,8 @@
                             @foreach (Tour item in Model)
                             {
                                 <div class="col-lg-4 col-md-6">
-                                    <div class="card">
-                                        <img class='tokenImage'
+                                    <div class="card featured-item">
+                                        <img style="height:30vh;object-fit:cover" class='tokenImage'
                                              src="~/assets/images/toursphotos/@item.TourImages.FirstOrDefault(ti=>ti.IsMain==true)?.Path"
                                              alt="NFT" />
                                         <div class="title">
@@ -189,6 +188,7 @@
                                     </div>
                                 </div>
                             }
+                          
                         </div>
                         <p style="opacity: 0;" id="not_found"></p>
                     </div>
@@ -199,6 +199,7 @@
 
 </main>
 
+
 @section Scripts {
-    <script src="~/assets/js/tours.js"></script>
+    <script src="./assets/js/tours.js"></script>
 }

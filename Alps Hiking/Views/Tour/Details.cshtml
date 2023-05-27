@@ -330,7 +330,7 @@
                                 <div class="slider-for">
                                     @foreach (TourImage item in Model.TourImages.Where(ti => ti.IsMain == false))
                                     {
-                                        <img src="~/assets/images/toursphotos/@item.Path"
+                                        <img style="height:550px;object-fit:cover;" src="~/assets/images/toursphotos/@item.Path"
                                              alt="">
                                     }
                                 </div>

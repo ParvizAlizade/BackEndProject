@@ -1,9 +1,10 @@
 ﻿using Alps_Hiking.Entities;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
 namespace Alps_Hiking.DAL
 {
-	public class AlpsHikingDbContext :DbContext
+	public class AlpsHikingDbContext : IdentityDbContext<User>
 	{
 		public AlpsHikingDbContext(DbContextOptions<AlpsHikingDbContext> options) : base(options)
 		{
@@ -28,6 +29,8 @@ namespace Alps_Hiking.DAL
 			modelBuilder.Entity<Setting>()
 				.HasIndex(s => s.Key)
 				.IsUnique();
-		}
-	}
+            base.OnModelCreating(modelBuilder);
+
+        }
+    }
 }

@@ -1009,12 +1009,60 @@
       "PackagePath": "staticwebassets\\assets\\OwlCarousel2-2.3.4\\test\\unit\\core.js"
     },
     {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\css\\about.css",
+      "PackagePath": "staticwebassets\\assets\\css\\about.css"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\css\\about.css.map",
+      "PackagePath": "staticwebassets\\assets\\css\\about.css.map"
+    },
+    {
       "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\css\\button.css",
       "PackagePath": "staticwebassets\\assets\\css\\button.css"
     },
     {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\css\\contact.css",
+      "PackagePath": "staticwebassets\\assets\\css\\contact.css"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\css\\contact.css.map",
+      "PackagePath": "staticwebassets\\assets\\css\\contact.css.map"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\css\\destinations.css",
+      "PackagePath": "staticwebassets\\assets\\css\\destinations.css"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\css\\destinations.css.map",
+      "PackagePath": "staticwebassets\\assets\\css\\destinations.css.map"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\css\\detail.css",
+      "PackagePath": "staticwebassets\\assets\\css\\detail.css"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\css\\detail.css.map",
+      "PackagePath": "staticwebassets\\assets\\css\\detail.css.map"
+    },
+    {
       "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\css\\hamburgermenu.css",
       "PackagePath": "staticwebassets\\assets\\css\\hamburgermenu.css"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\css\\login.css",
+      "PackagePath": "staticwebassets\\assets\\css\\login.css"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\css\\login.css.map",
+      "PackagePath": "staticwebassets\\assets\\css\\login.css.map"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\css\\register.css",
+      "PackagePath": "staticwebassets\\assets\\css\\register.css"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\css\\register.css.map",
+      "PackagePath": "staticwebassets\\assets\\css\\register.css.map"
     },
     {
       "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\css\\style.css",
@@ -1023,6 +1071,14 @@
     {
       "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\css\\style.css.map",
       "PackagePath": "staticwebassets\\assets\\css\\style.css.map"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\css\\team.css",
+      "PackagePath": "staticwebassets\\assets\\css\\team.css"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\css\\team.css.map",
+      "PackagePath": "staticwebassets\\assets\\css\\team.css.map"
     },
     {
       "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\fonts\\Dancing_Script\\DancingScript-VariableFont_wght.ttf",
@@ -1441,20 +1497,12 @@
       "PackagePath": "staticwebassets\\assets\\images\\teammembers\\pexels-марина-вотинцева-9136201.jpg"
     },
     {
-      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\images\\toursphotos\\13-Laila-Peak-700x500.jpg",
-      "PackagePath": "staticwebassets\\assets\\images\\toursphotos\\13-Laila-Peak-700x500.jpg"
-    },
-    {
       "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\images\\toursphotos\\1f32b7f3-04e6-4a37-836b-817620cb5565.jpg",
       "PackagePath": "staticwebassets\\assets\\images\\toursphotos\\1f32b7f3-04e6-4a37-836b-817620cb5565.jpg"
     },
     {
       "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\images\\toursphotos\\21travel-sweden-promo-1-videoSixteenByNineJumbo1600.jpg",
       "PackagePath": "staticwebassets\\assets\\images\\toursphotos\\21travel-sweden-promo-1-videoSixteenByNineJumbo1600.jpg"
-    },
-    {
-      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\images\\toursphotos\\2L_Y1Hzw-1-700x500.jpeg",
-      "PackagePath": "staticwebassets\\assets\\images\\toursphotos\\2L_Y1Hzw-1-700x500.jpeg"
     },
     {
       "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\images\\toursphotos\\39267772-prague-wallpapers-700x466.jpg",
@@ -1473,12 +1521,20 @@
       "PackagePath": "staticwebassets\\assets\\images\\toursphotos\\Luggage-Factory-The-Travel-Experts-Destinations-Miami-Flordia-Beach-3-700x466.jpg"
     },
     {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\images\\toursphotos\\Madeira_Portugal.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\toursphotos\\Madeira_Portugal.jpg"
+    },
+    {
       "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\images\\toursphotos\\RUSSIA-FEATURE-compressed.jpg",
       "PackagePath": "staticwebassets\\assets\\images\\toursphotos\\RUSSIA-FEATURE-compressed.jpg"
     },
     {
       "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\images\\toursphotos\\Slovenia-2560x1395.jpg",
       "PackagePath": "staticwebassets\\assets\\images\\toursphotos\\Slovenia-2560x1395.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\images\\toursphotos\\Snowy+Mountain+with+Steve+this+one+Mine.jpeg",
+      "PackagePath": "staticwebassets\\assets\\images\\toursphotos\\Snowy+Mountain+with+Steve+this+one+Mine.jpeg"
     },
     {
       "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\images\\toursphotos\\Tokyo_Dollarphotoclub_72848283-copy-700x466.jpg",
@@ -1603,6 +1659,10 @@
     {
       "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\images\\toursphotos\\pexels-pixabay-531602.jpg",
       "PackagePath": "staticwebassets\\assets\\images\\toursphotos\\pexels-pixabay-531602.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\images\\toursphotos\\portugal-3029665_1280.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\toursphotos\\portugal-3029665_1280.jpg"
     },
     {
       "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\images\\toursphotos\\red-hat-factory-768348-unsplash-1500x1000.jpg",
@@ -1771,6 +1831,10 @@
     {
       "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\scss\\tours.css.map",
       "PackagePath": "staticwebassets\\assets\\scss\\tours.css.map"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\scss\\tours.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\tours.scss"
     },
     {
       "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\slick-1.8.1\\.gitignore",
